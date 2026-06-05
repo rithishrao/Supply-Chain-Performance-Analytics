@@ -1,94 +1,77 @@
 # Supply Chain Performance Analytics
 
-Exploratory Data Analysis (EDA) on a global supply chain dataset to identify operational inefficiencies, quantify revenue at risk from late deliveries, and surface actionable business insights across shipping modes, markets, regions, and product categories.
+Exploratory Data Analysis (EDA) on a global supply chain dataset to identify operational inefficiencies, quantify delivery risks, analyze logistics performance, and generate actionable business insights across shipping modes, markets, regions, and customer segments.
 
 ---
 
 ## Overview
 
-Late deliveries are one of the most measurable operational failures in supply chain management — they directly impact customer satisfaction, cancellation rates, and recoverable revenue. This project uses Python-based EDA to systematically diagnose where delays are concentrated, how much revenue is at risk, and which operational levers have the highest impact.
+Supply chain performance directly impacts customer satisfaction, operational efficiency, and business profitability. Delayed deliveries can lead to increased costs, customer churn, cancellations, and revenue loss.
 
-**Dataset:** 180,000+ order records across 53 columns including order dates, shipping dates, markets, regions, product categories, customer segments, and financial metrics.
+This project applies Python-based analytics to investigate delivery performance across a large-scale global supply chain dataset containing over 180,000 records and 53 business variables.
+
+The objective is to uncover patterns behind late deliveries, identify operational bottlenecks, and provide data-driven recommendations for improving supply chain performance.
 
 ---
 
 ## Business Questions Answered
 
-- Which shipping modes have the highest late delivery risk — and by how much versus the global average?
-- Which markets and regions consistently underperform on delivery?
-- What is the total revenue at risk from late deliveries, and which product categories drive the most exposure?
-- Which route combinations (region × shipping mode) are the worst performers?
-- How does late delivery risk vary by customer segment, order type, and department?
-- Are there seasonal patterns in delivery failures?
+- Which shipping modes experience the highest delivery delays?
+- Which markets and regions have the highest delivery risk?
+- How do delivery patterns vary throughout the year?
+- Which operational areas contribute most to logistics inefficiencies?
+- How do order outcomes vary across different customer and market segments?
+- What trends can be identified to improve supply chain decision-making?
 
 ---
 
 ## Key Analyses
 
-### 1. Delivery Delay Index (DDI)
+### 1. Delivery Performance Analysis
 
-Created a custom metric:
+- Shipping Mode Comparison
+- Delay Risk Assessment
+- Delivery Performance Benchmarking
+- Operational Efficiency Evaluation
 
-```text
-DDI = Actual Shipping Days − Scheduled Shipping Days
-```
+### 2. Market & Regional Analysis
 
-Used alongside a high-risk delivery flag to identify significant delivery failures.
+- Market-Level Delay Risk
+- Regional Performance Comparison
+- Geographic Risk Assessment
+- Cross-Market Benchmarking
 
-### 2. Late Delivery Risk by Shipping Mode
+### 3. Order Status Analysis
 
-Grouped late delivery risk rates by shipping mode and benchmarked each against the global average.
+- Completed Orders
+- Pending Orders
+- Cancelled Orders
+- Delivery Outcome Trends
 
-### 3. Market & Regional Analysis
+### 4. Seasonal Trend Analysis
 
-Computed late delivery rates, average delay severity, and total order volume across markets and regions.
+- Monthly Delivery Performance
+- Peak Delay Periods
+- Seasonal Logistics Patterns
+- Demand and Fulfillment Trends
 
-### 4. Revenue at Risk by Product Category
+### 5. Operational Risk Assessment
 
-Calculated revenue exposure associated with delayed deliveries and ranked product categories by financial impact.
-
-### 5. Route-Level Analysis
-
-Created a composite route variable using:
-
-```text
-Region + Shipping Mode
-```
-
-to identify the highest-risk operational routes.
-
-### 6. Customer Segment & Order Type Analysis
-
-Compared delay risk across:
-
-- Customer Segments
-- Single-item Orders
-- Bulk Orders
-
-### 7. Seasonal Trend Analysis
-
-Analyzed monthly delivery patterns to identify operational stress periods and seasonal spikes.
-
-### 8. Order Status & Payment Type Analysis
-
-Evaluated relationships between:
-
-- Payment Methods
-- Order Completion
-- Cancellations
-- Delivery Outcomes
+- Late Delivery Risk Identification
+- High-Risk Segment Detection
+- Performance Gap Analysis
+- Logistics Bottleneck Detection
 
 ---
 
 ## Key Insights
 
-- First Class shipping recorded the highest frequency of late deliveries.
-- Second Class shipping exhibited the highest delay severity and variability.
-- Several region–shipping routes experienced delay rates exceeding 70%.
-- Delayed deliveries contributed significantly to revenue at risk.
-- Pet Shop products showed the highest operational risk among departments.
-- Bulk orders experienced slightly higher delays than single-item orders.
-- Transfer payments were associated with elevated delay and cancellation rates.
+- Delivery performance varies significantly across shipping modes.
+- Certain markets consistently exhibit higher late-delivery risk than others.
+- Seasonal fluctuations affect delivery efficiency and fulfillment performance.
+- Order outcomes differ across regions and operational channels.
+- Data-driven monitoring can help identify logistics bottlenecks before they impact customers.
+- Supply chain analytics can support operational planning and improve service quality.
 
 ---
 
@@ -102,17 +85,13 @@ Evaluated relationships between:
 
 ![Regional Analysis](images/regional_delay_analysis.png)
 
-### Revenue at Risk by Product Category
+### Market-Level Delivery Risk Analysis
 
-![Revenue Impact](images/revenue_at_risk.png)
+![Market Risk Analysis](images/market_risk_analysis.png)
 
-### Route-Level Risk Analysis
+### Order Status Analysis
 
-![Route Analysis](images/route_risk_analysis.png)
-
-### Customer Segment Performance
-
-![Customer Analysis](images/customer_segment_analysis.png)
+![Order Status Analysis](images/order_status_analysis.png)
 
 ### Seasonal Delivery Trends
 
@@ -122,13 +101,13 @@ Evaluated relationships between:
 
 ## Tech Stack
 
-| Tool | Usage |
+| Tool | Purpose |
 |--------|--------|
-| Python | Core Analysis |
+| Python | Data Analysis |
 | Pandas | Data Cleaning & Transformation |
-| NumPy | Feature Engineering & Metrics |
-| Matplotlib | Visualization |
-| Seaborn | Statistical Plots & Heatmaps |
+| NumPy | Numerical Analysis |
+| Matplotlib | Data Visualization |
+| Seaborn | Statistical Visualization |
 | Jupyter Notebook | Analysis Environment |
 
 ---
@@ -139,26 +118,26 @@ Evaluated relationships between:
 
 - Exploratory Data Analysis (EDA)
 - Data Cleaning
+- Data Transformation
 - Feature Engineering
-- KPI Development
+- KPI Analysis
 - Data Visualization
-- Business Analytics
 
-### Operational Analytics
+### Business Analytics
 
-- Supply Chain Analytics
-- Logistics Performance Analysis
-- Revenue Impact Assessment
-- Process Optimization
-- Risk Identification
-
-### Business Intelligence
-
-- Customer Segmentation
-- Trend Analysis
-- KPI Benchmarking
-- Insight Generation
+- Performance Analysis
+- Trend Identification
+- Operational Analytics
 - Decision Support
+- Business Insight Generation
+
+### Supply Chain Analytics
+
+- Logistics Analysis
+- Delivery Performance Monitoring
+- Risk Assessment
+- Process Optimization
+- Operational Efficiency Analysis
 
 ### Technical Skills
 
@@ -167,6 +146,7 @@ Evaluated relationships between:
 - NumPy
 - Matplotlib
 - Seaborn
+- Jupyter Notebook
 
 ---
 
@@ -180,9 +160,8 @@ Supply-Chain-Performance-Analytics/
 └── images/
     ├── shipping_mode_analysis.png
     ├── regional_delay_analysis.png
-    ├── revenue_at_risk.png
-    ├── route_risk_analysis.png
-    ├── customer_segment_analysis.png
+    ├── market_risk_analysis.png
+    ├── order_status_analysis.png
     └── seasonal_trends.png
 ```
 
@@ -204,14 +183,14 @@ jupyter notebook Supply_Chain_Performance_Analytics.ipynb
 
 ## Business Impact
 
-This analysis demonstrates how data can be used to:
+This project demonstrates how analytics can be used to:
 
-- Improve delivery performance
-- Reduce operational inefficiencies
-- Identify high-risk logistics routes
-- Improve customer satisfaction
-- Prioritize operational interventions
-- Protect revenue through proactive monitoring
+- Improve logistics performance
+- Monitor delivery efficiency
+- Identify operational bottlenecks
+- Support business decision-making
+- Improve customer experience
+- Enhance supply chain visibility
 
 ---
 
