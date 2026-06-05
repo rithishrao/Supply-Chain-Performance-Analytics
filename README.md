@@ -1,16 +1,14 @@
 # Supply Chain Performance Analytics
 
-Exploratory Data Analysis (EDA) on a global supply chain dataset to identify operational inefficiencies, quantify delivery risks, analyze logistics performance, and generate actionable business insights across shipping modes, markets, regions, and customer segments.
+Exploratory Data Analysis (EDA) on a global supply chain dataset to identify operational inefficiencies, analyze delivery performance, uncover logistics bottlenecks, and generate actionable business insights across shipping modes, markets, regions, and customer segments.
 
 ---
 
 ## Overview
 
-Supply chain performance directly impacts customer satisfaction, operational efficiency, and business profitability. Delayed deliveries can lead to increased costs, customer churn, cancellations, and revenue loss.
+Supply chain performance plays a critical role in customer satisfaction, operational efficiency, and profitability. Delayed deliveries can lead to increased costs, reduced customer trust, order cancellations, and revenue loss.
 
-This project applies Python-based analytics to investigate delivery performance across a large-scale global supply chain dataset containing over 180,000 records and 53 business variables.
-
-The objective is to uncover patterns behind late deliveries, identify operational bottlenecks, and provide data-driven recommendations for improving supply chain performance.
+This project applies Python-based analytics to investigate delivery performance across a large-scale global supply chain dataset containing over 180,000 records and 53 business variables. The objective is to identify patterns behind late deliveries, evaluate operational performance, and provide data-driven recommendations for improving logistics efficiency.
 
 ---
 
@@ -19,8 +17,8 @@ The objective is to uncover patterns behind late deliveries, identify operationa
 - Which shipping modes experience the highest delivery delays?
 - Which markets and regions have the highest delivery risk?
 - How do delivery patterns vary throughout the year?
-- Which operational areas contribute most to logistics inefficiencies?
-- How do order outcomes vary across different customer and market segments?
+- What operational areas contribute most to logistics inefficiencies?
+- How do order outcomes vary across different markets and customer segments?
 - What trends can be identified to improve supply chain decision-making?
 
 ---
@@ -32,7 +30,7 @@ The objective is to uncover patterns behind late deliveries, identify operationa
 - Shipping Mode Comparison
 - Delay Risk Assessment
 - Delivery Performance Benchmarking
-- Operational Efficiency Evaluation
+- Logistics Efficiency Evaluation
 
 ### 2. Market & Regional Analysis
 
@@ -183,7 +181,7 @@ jupyter notebook Supply_Chain_Performance_Analytics.ipynb
 
 ## Business Impact
 
-This project demonstrates how analytics can be used to:
+This analysis demonstrates how analytics can be used to:
 
 - Improve logistics performance
 - Monitor delivery efficiency
