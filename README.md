@@ -89,7 +89,7 @@ This project applies Python-based analytics to investigate delivery performance 
 
 ### Order Status Analysis
 
-![Order Status Analysis](images/order_status_analysis.png)
+![Order Status Analysis](images/Order%20Status%20Analysis.png)
 
 ### Seasonal Delivery Trends
 
@@ -159,7 +159,7 @@ Supply-Chain-Performance-Analytics/
     ├── shipping_mode_analysis.png
     ├── regional_delay_analysis.png
     ├── market_risk_analysis.png
-    ├── order_status_analysis.png
+    ├── Order Status Analysis.png
     └── seasonal_trends.png
 ```
 
